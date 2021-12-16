@@ -2,16 +2,10 @@ const apiKey = "a22bb3672a61767ba111ec9a163020d7";
 const baseUrl = "https://api.openweathermap.org/data/2.5/weather?";
 const units = "metric";
 
-let weathericon = document.querySelector('.weather-icon').src;
-console.log(weathericon);
-
-
-
 // Creating date dynamically
 let date = new Date();
 // let appDate = document.querySelector('.date');
 let newDate = buildDate(date);
-console.log(newDate);
 
 function buildDate(d) {
     let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -37,7 +31,7 @@ function generateZipcode(e) {
 
 }
 
-
+// getting information from the weather website
 const getWeatherInfo = async(baseUrl, zip, country, units, apiKey) => {
     const res = await fetch(`${baseUrl}zip=${zip},${country}&units=${units}&appid=${apiKey}`);
     console.log(res);
@@ -54,7 +48,7 @@ const getWeatherInfo = async(baseUrl, zip, country, units, apiKey) => {
     }
 };
 
-
+// posting the information to the server and updating the client side
 const postData = async (data) => {
     const res = await fetch('/weather/saved', {
         method: "POST",
