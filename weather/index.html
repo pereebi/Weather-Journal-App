@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/51a9f7e7ff.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <title>Pere's Weather App</title>
+</head>
+<body>
+    <div class="cover">
+        <header>
+        <h1>Weather App</h1>
+    </header>
+    <main>
+        <section class="main-content">
+            <div class="icon">
+                <h3 class="temp">11<span>°C</span></h3>
+                <img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon">
+                <h3  class="description">Rain</h3>
+                <h5 class="humid">Humidity: <span class="humidity">81</span><span>%</span></h5>
+            </div>
+            <div class="location-date">
+                <h1 class="location">Mountain View, US</h1>    
+                <h4 class="date">Monday, 13 December 2021</h4>
+            </div>
+            <div class="feeling">
+                <h3 class="weather-feel">How do you feel today?</h3>
+                <textarea class="my-feelings" id="feel" placeholder="Express your feelings today" cols="30" rows="1">I am feeling hot today</textarea>
+            </div>
+        </section>
+        <section class="zip">
+            <input type="text" id="zipcode" placeholder="Zipcode" value="94040">
+            <br>
+            <input type="text" id="country-code" placeholder="Enter Country Code" value="us">
+            <br>
+            <button type="submit" id="get-weather">Get</button>
+        </section>
+    </main>
+    <footer>
+        <a href="https://openweathermap.org/poweredby" class="openweather">Powered By OpenWeatherMap</a>
+    </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

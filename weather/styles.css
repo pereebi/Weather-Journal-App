@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;    
+    /* background-color: rgb(73, 158, 158); */
+    background-image: url("img-2.jpg");
+    background-size: cover;
+    background-position: top cover;
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    line-height: 1.5;    
+}
+
+header{
+    margin-top: 2%;
+}
+
+input{
+    border-radius: 20px 0 20px 0;
+    background-color: rgb(186, 214, 214);
+    text-align: start;
+    font-size: 1rem;
+    max-width: 250px;
+    padding: 10px 10px 5px 10px;
+    border: none;
+    outline: none;
+    border-bottom: 4px solid rgb(22, 58, 58);
+    font-weight: 400px;
+    line-height: 1.5;
+    font-family: 'Outfit', sans-serif;
+    margin-top: 1%;
+}
+
+input:focus{
+    background-color: rgb(228, 236, 236);
+}
+
+br{
+    padding: 2%;
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    flex-direction: row-reverse;
+}
+
+.icon{
+    flex: 20%;
+    align-self: start;
+}
+
+.location-date{
+    flex: 20%;
+    align-self: center;
+}
+
+.location-date h1{
+    padding-bottom: 15%;
+}
+
+.feeling{
+    flex: 20%;
+    align-self: center;
+
+}
+
+.my-feelings{
+    border-radius: 20px 0 20px 0;
+    background-color: rgb(186, 214, 214);
+    text-align: start;
+    font-size: 1rem;
+    max-width: 250px;
+    padding: 10px 10px 5px 10px;
+    border: none;
+    outline: none;
+    border-bottom: 4px solid rgb(22, 58, 58);
+    font-weight: 400px;
+    line-height: 1.5;
+    font-family: 'Outfit', sans-serif;
+}
+
+.my-feelings:focus{
+    background-color: rgb(228, 236, 236);
+}
+
+button{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400px;
+    font-size: 1rem;
+    margin-top: 1%;
+    line-height: 1.5;
+    border-radius: 7px;
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(17, 34, 34);
+    color: rgb(240, 250, 250);
+}
+
+footer{
+    display: flex;
+
+}
+
+.openweather{
+    text-decoration: none;
+    margin-top: 3%;
+    color: black;
+}
+
+/* Medium devices (landscape tablets, 769px and up) */
+@media only screen and (min-width: 769px) and (max-width: 920px) {
+    .my-feelings{
+        max-width: 170px;
+        padding: 10px 7px 3px 7px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 481px and up) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .main-content{
+        flex-direction: column;
+    }
+
+    .icon{
+        align-self: center;
+    }
+
+    input{
+        max-width: 150px;
+    }
+
+    .my-feelings{
+        max-width: 200px;
+        padding: 10px 7px 3px 7px;
+    }
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .main-content{
+        flex-direction: column;
+    }
+
+    .icon{
+        align-self: center;
+    }
+
+    input{
+        max-width: 130px;
+    }
+
+    .my-feelings{
+        max-width: 180px;
+        padding: 10px 7px 3px 7px;
+    }
+}
+
+
+
+
+
+
+
